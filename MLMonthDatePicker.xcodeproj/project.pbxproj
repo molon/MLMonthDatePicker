@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		360FDDD51932FE7D001FDE29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360FDDD41932FE7D001FDE29 /* Foundation.framework */; };
+		360FDDD71932FE7D001FDE29 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360FDDD61932FE7D001FDE29 /* CoreGraphics.framework */; };
+		360FDDD91932FE7D001FDE29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360FDDD81932FE7D001FDE29 /* UIKit.framework */; };
+		360FDDDF1932FE7D001FDE29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 360FDDDD1932FE7D001FDE29 /* InfoPlist.strings */; };
+		360FDDE11932FE7D001FDE29 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 360FDDE01932FE7D001FDE29 /* main.m */; };
+		360FDDE51932FE7D001FDE29 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 360FDDE41932FE7D001FDE29 /* AppDelegate.m */; };
+		360FDDE81932FE7D001FDE29 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 360FDDE61932FE7D001FDE29 /* Main.storyboard */; };
+		360FDDEB1932FE7D001FDE29 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 360FDDEA1932FE7D001FDE29 /* ViewController.m */; };
+		360FDDED1932FE7D001FDE29 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 360FDDEC1932FE7D001FDE29 /* Images.xcassets */; };
+		360FDDF41932FE7D001FDE29 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360FDDF31932FE7D001FDE29 /* XCTest.framework */; };
+		360FDDF51932FE7D001FDE29 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360FDDD41932FE7D001FDE29 /* Foundation.framework */; };
+		360FDDF61932FE7D001FDE29 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 360FDDD81932FE7D001FDE29 /* UIKit.framework */; };
+		360FDDFE1932FE7D001FDE29 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 360FDDFC1932FE7D001FDE29 /* InfoPlist.strings */; };
+		360FDE001932FE7D001FDE29 /* MLMonthDatePickerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 360FDDFF1932FE7D001FDE29 /* MLMonthDatePickerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		360FDDF71932FE7D001FDE29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 360FDDC91932FE7D001FDE29 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 360FDDD01932FE7D001FDE29;
+			remoteInfo = MLMonthDatePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		360FDDD11932FE7D001FDE29 /* MLMonthDatePicker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MLMonthDatePicker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		360FDDD41932FE7D001FDE29 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		360FDDD61932FE7D001FDE29 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		360FDDD81932FE7D001FDE29 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		360FDDDC1932FE7D001FDE29 /* MLMonthDatePicker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLMonthDatePicker-Info.plist"; sourceTree = "<group>"; };
+		360FDDDE1932FE7D001FDE29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		360FDDE01932FE7D001FDE29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		360FDDE21932FE7D001FDE29 /* MLMonthDatePicker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MLMonthDatePicker-Prefix.pch"; sourceTree = "<group>"; };
+		360FDDE31932FE7D001FDE29 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		360FDDE41932FE7D001FDE29 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		360FDDE71932FE7D001FDE29 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		360FDDE91932FE7D001FDE29 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		360FDDEA1932FE7D001FDE29 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		360FDDEC1932FE7D001FDE29 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		360FDDF21932FE7D001FDE29 /* MLMonthDatePickerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MLMonthDatePickerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		360FDDF31932FE7D001FDE29 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		360FDDFB1932FE7D001FDE29 /* MLMonthDatePickerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MLMonthDatePickerTests-Info.plist"; sourceTree = "<group>"; };
+		360FDDFD1932FE7D001FDE29 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		360FDDFF1932FE7D001FDE29 /* MLMonthDatePickerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLMonthDatePickerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		360FDDCE1932FE7D001FDE29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360FDDD71932FE7D001FDE29 /* CoreGraphics.framework in Frameworks */,
+				360FDDD91932FE7D001FDE29 /* UIKit.framework in Frameworks */,
+				360FDDD51932FE7D001FDE29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360FDDEF1932FE7D001FDE29 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360FDDF41932FE7D001FDE29 /* XCTest.framework in Frameworks */,
+				360FDDF61932FE7D001FDE29 /* UIKit.framework in Frameworks */,
+				360FDDF51932FE7D001FDE29 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		360FDDC81932FE7D001FDE29 = {
+			isa = PBXGroup;
+			children = (
+				360FDDDA1932FE7D001FDE29 /* MLMonthDatePicker */,
+				360FDDF91932FE7D001FDE29 /* MLMonthDatePickerTests */,
+				360FDDD31932FE7D001FDE29 /* Frameworks */,
+				360FDDD21932FE7D001FDE29 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		360FDDD21932FE7D001FDE29 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				360FDDD11932FE7D001FDE29 /* MLMonthDatePicker.app */,
+				360FDDF21932FE7D001FDE29 /* MLMonthDatePickerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		360FDDD31932FE7D001FDE29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				360FDDD41932FE7D001FDE29 /* Foundation.framework */,
+				360FDDD61932FE7D001FDE29 /* CoreGraphics.framework */,
+				360FDDD81932FE7D001FDE29 /* UIKit.framework */,
+				360FDDF31932FE7D001FDE29 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		360FDDDA1932FE7D001FDE29 /* MLMonthDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				360FDDE31932FE7D001FDE29 /* AppDelegate.h */,
+				360FDDE41932FE7D001FDE29 /* AppDelegate.m */,
+				360FDDE61932FE7D001FDE29 /* Main.storyboard */,
+				360FDDE91932FE7D001FDE29 /* ViewController.h */,
+				360FDDEA1932FE7D001FDE29 /* ViewController.m */,
+				360FDDEC1932FE7D001FDE29 /* Images.xcassets */,
+				360FDDDB1932FE7D001FDE29 /* Supporting Files */,
+			);
+			path = MLMonthDatePicker;
+			sourceTree = "<group>";
+		};
+		360FDDDB1932FE7D001FDE29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				360FDDDC1932FE7D001FDE29 /* MLMonthDatePicker-Info.plist */,
+				360FDDDD1932FE7D001FDE29 /* InfoPlist.strings */,
+				360FDDE01932FE7D001FDE29 /* main.m */,
+				360FDDE21932FE7D001FDE29 /* MLMonthDatePicker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		360FDDF91932FE7D001FDE29 /* MLMonthDatePickerTests */ = {
+			isa = PBXGroup;
+			children = (
+				360FDDFF1932FE7D001FDE29 /* MLMonthDatePickerTests.m */,
+				360FDDFA1932FE7D001FDE29 /* Supporting Files */,
+			);
+			path = MLMonthDatePickerTests;
+			sourceTree = "<group>";
+		};
+		360FDDFA1932FE7D001FDE29 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				360FDDFB1932FE7D001FDE29 /* MLMonthDatePickerTests-Info.plist */,
+				360FDDFC1932FE7D001FDE29 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		360FDDD01932FE7D001FDE29 /* MLMonthDatePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360FDE031932FE7D001FDE29 /* Build configuration list for PBXNativeTarget "MLMonthDatePicker" */;
+			buildPhases = (
+				360FDDCD1932FE7D001FDE29 /* Sources */,
+				360FDDCE1932FE7D001FDE29 /* Frameworks */,
+				360FDDCF1932FE7D001FDE29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MLMonthDatePicker;
+			productName = MLMonthDatePicker;
+			productReference = 360FDDD11932FE7D001FDE29 /* MLMonthDatePicker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		360FDDF11932FE7D001FDE29 /* MLMonthDatePickerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 360FDE061932FE7D001FDE29 /* Build configuration list for PBXNativeTarget "MLMonthDatePickerTests" */;
+			buildPhases = (
+				360FDDEE1932FE7D001FDE29 /* Sources */,
+				360FDDEF1932FE7D001FDE29 /* Frameworks */,
+				360FDDF01932FE7D001FDE29 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				360FDDF81932FE7D001FDE29 /* PBXTargetDependency */,
+			);
+			name = MLMonthDatePickerTests;
+			productName = MLMonthDatePickerTests;
+			productReference = 360FDDF21932FE7D001FDE29 /* MLMonthDatePickerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		360FDDC91932FE7D001FDE29 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = molon;
+				TargetAttributes = {
+					360FDDF11932FE7D001FDE29 = {
+						TestTargetID = 360FDDD01932FE7D001FDE29;
+					};
+				};
+			};
+			buildConfigurationList = 360FDDCC1932FE7D001FDE29 /* Build configuration list for PBXProject "MLMonthDatePicker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 360FDDC81932FE7D001FDE29;
+			productRefGroup = 360FDDD21932FE7D001FDE29 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				360FDDD01932FE7D001FDE29 /* MLMonthDatePicker */,
+				360FDDF11932FE7D001FDE29 /* MLMonthDatePickerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		360FDDCF1932FE7D001FDE29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360FDDED1932FE7D001FDE29 /* Images.xcassets in Resources */,
+				360FDDDF1932FE7D001FDE29 /* InfoPlist.strings in Resources */,
+				360FDDE81932FE7D001FDE29 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360FDDF01932FE7D001FDE29 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360FDDFE1932FE7D001FDE29 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		360FDDCD1932FE7D001FDE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360FDDEB1932FE7D001FDE29 /* ViewController.m in Sources */,
+				360FDDE51932FE7D001FDE29 /* AppDelegate.m in Sources */,
+				360FDDE11932FE7D001FDE29 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		360FDDEE1932FE7D001FDE29 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				360FDE001932FE7D001FDE29 /* MLMonthDatePickerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		360FDDF81932FE7D001FDE29 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 360FDDD01932FE7D001FDE29 /* MLMonthDatePicker */;
+			targetProxy = 360FDDF71932FE7D001FDE29 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		360FDDDD1932FE7D001FDE29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360FDDDE1932FE7D001FDE29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		360FDDE61932FE7D001FDE29 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360FDDE71932FE7D001FDE29 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		360FDDFC1932FE7D001FDE29 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				360FDDFD1932FE7D001FDE29 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		360FDE011932FE7D001FDE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		360FDE021932FE7D001FDE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		360FDE041932FE7D001FDE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLMonthDatePicker/MLMonthDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "MLMonthDatePicker/MLMonthDatePicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		360FDE051932FE7D001FDE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLMonthDatePicker/MLMonthDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "MLMonthDatePicker/MLMonthDatePicker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		360FDE071932FE7D001FDE29 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MLMonthDatePicker.app/MLMonthDatePicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLMonthDatePicker/MLMonthDatePicker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MLMonthDatePickerTests/MLMonthDatePickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		360FDE081932FE7D001FDE29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MLMonthDatePicker.app/MLMonthDatePicker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MLMonthDatePicker/MLMonthDatePicker-Prefix.pch";
+				INFOPLIST_FILE = "MLMonthDatePickerTests/MLMonthDatePickerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		360FDDCC1932FE7D001FDE29 /* Build configuration list for PBXProject "MLMonthDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360FDE011932FE7D001FDE29 /* Debug */,
+				360FDE021932FE7D001FDE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		360FDE031932FE7D001FDE29 /* Build configuration list for PBXNativeTarget "MLMonthDatePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360FDE041932FE7D001FDE29 /* Debug */,
+				360FDE051932FE7D001FDE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		360FDE061932FE7D001FDE29 /* Build configuration list for PBXNativeTarget "MLMonthDatePickerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				360FDE071932FE7D001FDE29 /* Debug */,
+				360FDE081932FE7D001FDE29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 360FDDC91932FE7D001FDE29 /* Project object */;
+}
