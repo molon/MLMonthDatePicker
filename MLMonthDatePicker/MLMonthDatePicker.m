@@ -37,10 +37,10 @@
         
         NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:[NSDate date]];
         
-        components.year+=1;
+        components.year+=1000;
         _maximumDate = [[NSCalendar currentCalendar] dateFromComponents:components];
         
-        self.date = self.maximumDate;
+        self.date = [NSDate date];
     }
     return self;
 }

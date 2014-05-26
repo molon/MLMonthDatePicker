@@ -48,7 +48,7 @@
         [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
         _picker.maximumDate = [dateFormatter dateFromString:@"2016-10"];
         
-        [_picker setDate:_picker.maximumDate];
+//        [_picker setDate:_picker.maximumDate];
 	}
 	return _picker;
 }
