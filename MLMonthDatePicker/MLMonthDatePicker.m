@@ -23,7 +23,7 @@
         // Initialization code
         [self.months removeAllObjects];
         for (NSUInteger i=0; i<12; i++) {
-            [self.months addObject:[NSString stringWithFormat:@"%ld月",i+1]];
+            [self.months addObject:[NSString stringWithFormat:@"%u月",i+1]];
         }
         
         self.dataSource = self;
@@ -33,12 +33,12 @@
         NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
         [dateFormatter setDateFormat:@"yyyy-MM"];
         [dateFormatter setTimeZone:[NSTimeZone systemTimeZone]];
-        self.minimumDate = [dateFormatter dateFromString:@"1970-01"]; //这个作为默认最小值吧
+        _minimumDate = [dateFormatter dateFromString:@"1970-01"]; //这个作为默认最小值吧
         
         NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:[NSDate date]];
         
         components.year+=1;
-        self.maximumDate = [[NSCalendar currentCalendar] dateFromComponents:components];
+        _maximumDate = [[NSCalendar currentCalendar] dateFromComponents:components];
         
         self.date = self.maximumDate;
     }
@@ -96,6 +96,7 @@
     }
     
     [self reloadAllComponents];
+    [self adjustMonthRow];
 }
 
 - (void)setMaximumDate:(NSDate *)maximumDate
@@ -111,6 +112,7 @@
     }
     
     [self reloadAllComponents];
+    [self adjustMonthRow];
 }
 
 #pragma mark - data source and delegate
@@ -138,7 +140,7 @@
         NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear fromDate:self.minimumDate];
         NSUInteger minYear = components.year;
         
-        return [NSString stringWithFormat:@"%ld年",minYear+row];
+        return [NSString stringWithFormat:@"%u年",minYear+row];
     }
     return self.months[row];
 }
@@ -148,35 +150,7 @@
     NSDateComponents *minDateComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:self.minimumDate];
     NSUInteger minYear = minDateComponents.year;
     if (component==0) {
-        //检查是否是最大和最小年份，是的话，重置月份数组
-        NSDateComponents *maxDateComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:self.maximumDate];
-        NSUInteger maxYear = maxDateComponents.year;
-        
-        if (row == maxYear-minYear) { //最大年份
-            //找到最大年份的月份
-            NSUInteger maxMonth = maxDateComponents.month;
-            [self.months removeAllObjects];
-            for (NSUInteger i=0; i<maxMonth; i++) {
-                [self.months addObject:[NSString stringWithFormat:@"%ld月",i+1]];
-            }
-            [self reloadComponent:1];
-        }else if(row==0){ //最小年份
-            //找到最小年份的月份
-            NSUInteger minMonth = minDateComponents.month;
-            [self.months removeAllObjects];
-            for (NSUInteger i=minMonth-1; i<12; i++) {
-                [self.months addObject:[NSString stringWithFormat:@"%ld月",i+1]];
-            }
-            [self reloadComponent:1];
-        }else{
-            if (self.months.count!=12) { //不是12就重置回
-                [self.months removeAllObjects];
-                for (NSUInteger i=0; i<12; i++) {
-                    [self.months addObject:[NSString stringWithFormat:@"%ld月",i+1]];
-                }
-                [self reloadComponent:1];
-            }
-        }
+        [self adjustMonthRow];
     }
     
     NSDateComponents* components = [[NSDateComponents alloc] init];
@@ -203,4 +177,40 @@
     }    
 }
 
+
+- (void)adjustMonthRow
+{
+    NSUInteger row = [self selectedRowInComponent:0];
+    
+    //检查是否是最大和最小年份，是的话，重置月份数组
+    NSDateComponents *minDateComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:self.minimumDate];
+    NSUInteger minYear = minDateComponents.year;
+    NSDateComponents *maxDateComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:self.maximumDate];
+    NSUInteger maxYear = maxDateComponents.year;
+    
+    if (row == maxYear-minYear) { //最大年份
+        //找到最大年份的月份
+        NSUInteger maxMonth = maxDateComponents.month;
+        [self.months removeAllObjects];
+        for (NSUInteger i=0; i<maxMonth; i++) {
+            [self.months addObject:[NSString stringWithFormat:@"%u月",i+1]];
+        }
+    }else if(row==0){ //最小年份
+        //找到最小年份的月份
+        NSUInteger minMonth = minDateComponents.month;
+        [self.months removeAllObjects];
+        for (NSUInteger i=minMonth-1; i<12; i++) {
+            [self.months addObject:[NSString stringWithFormat:@"%u月",i+1]];
+        }
+    }else{
+        if (self.months.count!=12) { //不是12就重置回
+            [self.months removeAllObjects];
+            for (NSUInteger i=0; i<12; i++) {
+                [self.months addObject:[NSString stringWithFormat:@"%u月",i+1]];
+            }
+        }
+    }
+    
+    [self reloadComponent:1];
+}
 @end
