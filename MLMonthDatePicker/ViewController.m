@@ -22,6 +22,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    
     [self.view addSubview:self.picker];
     self.picker.frame = CGRectMake(0, self.view.bounds.size.height-self.picker.bounds.size.height, self.view.bounds.size.width, self.picker.bounds.size.height);
 }
